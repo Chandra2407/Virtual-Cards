@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="./src/index.js" type="module" defer></script>
+    <title>Virtual Cards</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Virtual cards</h1>
+            <div>
+                <i class="fa-solid fa-video"></i>
+                <p>learn more</p>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="add-card-btn">
+                <i class="fa-solid fa-plus"></i>
+                <h4>Virtual card</h4>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="top">
+            <div class="top-left">
+                <a href="/#/your">Your</a>
+                <a id ="all"href="/#/all">All</a>
+                <a href="/#/blocked">Blocked</a>
+            </div>
+            <div class="top-right">
+                <i class="fa-solid fa-table-cells-large"></i>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="mid">
+            <div class="search-box">
+                <input id="searchText" type="search" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass" id="searchBtn"></i>
+            </div>
+            <div class="filter">
+                <i class='bx bx-filter'></i>
+                <p>filter</p>
+            </div>
+            <div class="filter-card">
+               <div class="filter-top">
+                   <p>filter</p>
+               </div>
+              <div class="filter-mid">
+                <p>Type</p>
+                <div class="filter-check">
+                    <input type="checkbox" id="filterSub" name="filterSub" value="subscription">
+                    <label for="filterSub">Subscription</label>
+                    <input type="checkbox" id="filterBurn" name="filterBurn" value="burner">
+                    <label for="filterBurn">Burner</label>
+                </div>
+                <p>Cardholder</p>
+                <div class="filter-select">
+                    <select name="cardHolder" id="cardHolder">
+                        <option id ="abc"value="" disabled selected hidden>Select cardholder</option>
+                        <option value="rajesh">Rajesh</option>
+                        <option value="ayush">Ayush</option>
+                        <option value="ranjith">Ranjith</option>
+                      </select>
+                </div>
+                <div class="filter-btn">
+                    <button id="applyBtn">Apply</button>
+                    <button id="clearBtn">Clear</button>
+                </div>
+              </div> 
+            </div>
+        </div>
+        <div class="bot">
+            
+        </div>
+    </main>
+    <ul class="pagination">
+        <li><a href="/#/" id="prev">&#139</a></li>
+        <li><a href="/#/" id="next">&#155</a></li>
+    </ul>
+</body>
+
+</html>
