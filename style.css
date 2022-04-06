@@ -155,7 +155,7 @@ main .mid .filter {
     margin: 0 1rem;
 }
 .filter-card.active{
-    display: none;
+display: block;
 }
 .filter-card {
     padding: 1rem 0;
@@ -171,6 +171,7 @@ main .mid .filter {
     font-size: 1.3rem;
     color: rgba(0, 0, 0, 0.733);
     transition: 0.4s;
+    display: none;
 }
 
 .filter-top {
